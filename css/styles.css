@@ -10,7 +10,7 @@
     --second-primary-color: #2E2F42;
     --color-text: #434455;
     --corp-color: #4D5AE5;
-    --button-hover: #404BBF;
+    --corp-color-hover: #404BBF;
 }
 
 /* base style */
@@ -34,7 +34,7 @@ body {
     list-style-type: none;
 }
 
-h2 {
+.section-title {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
@@ -42,13 +42,13 @@ h2 {
     text-transform: capitalize;
 }
 
-h1,
-h2,
-h3 {
+.main-banner-title,
+.section-title,
+.section-sub-title {
     text-align: center;
 }
 
-h3 {
+.section-sub-title {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -61,32 +61,35 @@ h3 {
     font-family: var(--title-font);
     font-size: 18px;
     font-weight: 800;
-    line-height: 1.16;
+    line-height: 1.17;
     letter-spacing: 0.54px;
     text-transform: uppercase;
-}
-
-.logo-item {
     color: var(--corp-color);
 }
 
-button {
-    font-family: inherit;
-    cursor: pointer;
-
+.logo-acent {
+    color: var(--primary-dark-color);
 }
 
 .button {
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.main-banner-button {
     background-color: var(--corp-color);
     color: var(--primary-light-color);
     border: none;
-    border-radius: 4px;
     padding: 16px 32px;
-
 }
 
-.button:hover {
-    background-color: var(--button-hover);
+.button:hover,
+.button:focus {
+    background-color: var(--corp-color-hover);
 }
 
 /* style for header */
@@ -95,18 +98,30 @@ button {
     background-color: var(--primary-light-color);
 }
 
-.header-list .link {
+.header-list-item {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
+    font-weight: 500;
+    color: var(--primary-dark-color);
+}
+
+.header-list-item:hover,
+.header-list-item:focus {
+    color: var(--corp-color-hover);
 }
 
 .header-address {
     font-style: inherit;
 }
 
-.header-address .link {
+.header-address-item {
     color: var(--color-text);
+}
+
+.header-address-item:hover,
+.header-address-item:focus {
+    color: var(--corp-color-hover);
 }
 
 
@@ -134,13 +149,8 @@ button {
     background-color: var(--second-light-color);
 }
 
-.contacts-list {
-    display: flex;
-}
-
 .contacts-item {
     text-align: center;
-    border-radius: 0px 0px 4px 4px;
     background: var(--primary-light-color);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
         0px 1px 1px 0px rgba(46, 47, 66, 0.16),
@@ -148,27 +158,16 @@ button {
 }
 
 /* section portfolio-page */
-.portfolio-page-list {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .portfolio-page-item {
-    display: flex;
     border: 1px solid var(--third-ligth-color);
 
 }
 
-.portfolio-page-item h3 {
+.portfolio-page-item .section-sub-title {
     text-align: left;
 }
 
-.filter {
-    display: flex;
-}
-
-.filter-item button {
-    border-radius: 4px;
+.filter-button {
     border: 1px solid var(--third-ligth-color);
     background: var(--second-light-color);
     color: var(--corp-color);
@@ -178,8 +177,9 @@ button {
     letter-spacing: 0.64px;
 }
 
-.filter-item button:hover {
-    border: 1px solid var(--corp-color);
-    background: var(--corp-color);
+.filter-button:hover,
+.filter-button:focus {
+    border: 1px solid var(--corp-color-hover);
+    background: var(--corp-color-hover);
     color: var(--third-ligth-color)
 }
