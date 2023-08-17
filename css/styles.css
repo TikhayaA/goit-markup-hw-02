@@ -70,13 +70,19 @@ h3 {
     color: var(--corp-color);
 }
 
+button {
+    font-family: inherit;
+    cursor: pointer;
+
+}
+
 .button {
     background-color: var(--corp-color);
     color: var(--primary-light-color);
     border: none;
-    cursor: pointer;
     border-radius: 4px;
     padding: 16px 32px;
+
 }
 
 .button:hover {
@@ -95,11 +101,11 @@ h3 {
     letter-spacing: 0.32px;
 }
 
-.header__address {
+.header-address {
     font-style: inherit;
 }
 
-.header__address .link {
+.header-address .link {
     color: var(--color-text);
 }
 
@@ -115,7 +121,7 @@ h3 {
     background-color: var(--primary-dark-color);
 }
 
-.main-banner__title {
+.main-banner-title {
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
@@ -123,21 +129,12 @@ h3 {
     color: var(--primary-light-color);
 }
 
-/* section studio */
-.studio__text {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.32px;
-}
-
 /* section contacts */
 .contacts {
     background-color: var(--second-light-color);
 }
 
-.contacts__list {
+.contacts-list {
     display: flex;
 }
 
@@ -151,7 +148,7 @@ h3 {
 }
 
 /* section portfolio-page */
-.portfolio-page__list {
+.portfolio-page-list {
     display: flex;
     flex-wrap: wrap;
 }
@@ -170,7 +167,7 @@ h3 {
     display: flex;
 }
 
-.filter__item button {
+.filter-item button {
     border-radius: 4px;
     border: 1px solid var(--third-ligth-color);
     background: var(--second-light-color);
@@ -179,10 +176,9 @@ h3 {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.64px;
-    cursor: pointer;
 }
 
-.filter__item button:hover {
+.filter-item button:hover {
     border: 1px solid var(--corp-color);
     background: var(--corp-color);
     color: var(--third-ligth-color)
