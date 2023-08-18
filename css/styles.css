@@ -176,5 +176,5 @@ body {
 .filter-button:hover,
 .filter-button:focus {
     background: var(--corp-color-hover);
-    color: var(--third-ligth-color);
+    color: var(--primary-light-color);
 }
